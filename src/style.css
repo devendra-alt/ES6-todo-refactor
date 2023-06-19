@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.padding {
+  padding: 1.2rem 1rem;
+}
+
+#todo {
+  width: 90%;
+  margin: 2.5rem auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+}
+
+#loader {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#task-adder {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-bottom: 0.05rem solid rgb(220, 220, 220);
+  outline: none;
+  color: rgb(168, 166, 166);
+  font-style: italic;
+}
+
+#todo-list {
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description-field {
+  border: none;
+  outline: none;
+  padding-left: 1.4rem;
+  font-size: 1.1rem;
+}
+
+#clear-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1.1rem 0;
+  cursor: pointer;
+  color: rgb(168, 166, 166);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 764px) {
+  #todo {
+    width: 50%;
+  }
+}
